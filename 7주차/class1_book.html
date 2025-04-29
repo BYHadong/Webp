@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #topMenu {
+            width: 500px;
+            padding: 10px;
+            margin: 20px 0 0 40px;
+            background-color: white;
+            border: dashed 4px green;
+            text-align: center;
+        }
+
+        #topMenu li {
+            display: inline;
+        }
+
+        #img{
+            background-image: url("./책 표지.png");
+            background-repeat: no-repeat;
+            background-size: 200px 300px;
+            width: 200px;
+            height: 300px;
+        }
+
+        #buyBtn{
+            color: black;
+            background-color: lightgreen;
+            padding: 8px;
+            margin-top: 250px;
+            margin-left: 50px;
+        }
+    </style>
+</head>
+<body>
+    <ul id="topMenu">
+        <li><a href="./index.html">index</a></li>
+        <li><a href="./class1_book.html">book</a></li>
+        <li><a href="./class_display.html">display</a></li>
+    </ul>
+    <h3>개발자 글쓰기</h3>
+    <ul>
+        <li>저자: 김철수</li>
+        <li>출판사: 위키북스</li>
+        <li>가격: 16,200원</li>
+    </ul>
+    <div id="img">
+        <button id="buyBtn">구매하로 가기기</button>
+    </div>
+</body>
+</html>
