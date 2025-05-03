@@ -54,23 +54,49 @@
         #sched_tbl .blue {
             color: #0000ff;
         }
+
         .badge {
             margin: 0px;
             padding: 0px;
-            text-align:right;
+            text-align: right;
         }
-        .badge img{
-            margin-top:16px;
+
+        .badge img {
+            margin-top: 16px;
+        }
+
+        #topMenu {
+            width: 500px;
+            padding: 10px;
+            margin: 20px 0 0 40px;
+            background-color: white;
+            border: dashed 4px green;
+            text-align: center;
+        }
+
+        #topMenu li {
+            display: inline;
         }
     </style>
 </head>
 
 <body>
+    <ul id="topMenu">
+        <li><a href="./index.html">캘린더</a></li>
+        <li><a href="./login.html">login</a></li>
+        <li><a href="./train_ticket.html">train</a></li>
+    </ul>
+    <br>
+    <br>
+    <br>
+    <br>
     <h3><img src="./img/schedule_gachon.png"></h3>
     <ul id="date">
-        <li><a href="./calender_3.html"><img src="./img/arrow_back_ios_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.png"></a></li>
+        <li><a href="./calender_3.html"><img src="./img/arrow_back_ios_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.png"></a>
+        </li>
         <li>2025년 4월</li>
-        <li><a href="./calender_5.html"><img src="./img/arrow_forward_ios_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.png"></a></li>
+        <li><a href="./calender_5.html"><img
+                    src="./img/arrow_forward_ios_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.png"></a></li>
     </ul>
     <table id="sched_tbl">
         <tr id="day">
@@ -112,7 +138,9 @@
         <tr>
             <td><span class="red">20</span></td>
             <td>21</td>
-            <td>22<br>중간고사<br><p class="badge"><img src="./img/badge.png"></p></td>
+            <td>22<br>중간고사<br>
+                <p class="badge"><img src="./img/badge.png"></p>
+            </td>
             <td>23<br>중간고사</td>
             <td>24<br>중간고사</td>
             <td>25<br>중간고사</td>
@@ -120,7 +148,9 @@
         </tr>
         <tr>
             <td><span class="red">27</span></td>
-            <td>28<br>중간고사<br><p class="badge"><img src="./img/badge.png"></p></td>
+            <td>28<br>중간고사<br>
+                <p class="badge"><img src="./img/badge.png"></p>
+            </td>
             <td>29</td>
             <td>30</td>
             <td></td>

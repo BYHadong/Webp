@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            width: 800px;
+        }
+
+        h1,
+        h2 {
+            color: white;
+            background-color: lightblue;
+            padding: 8px;
+            margin: 8px;
+        }
+
+        h3{
+            margin-left: 16px;
+        }
+
+        span {
+            display: inline-block;
+            color: black;
+            background-color: lightyellow;
+            border: 4px dashed tomato;
+            padding: 16px;
+            margin: 16px;
+        }
+
+        #topMenu {
+            width: 500px;
+            padding: 10px;
+            margin: 20px 0 0 40px;
+            background-color: white;
+            border: dashed 4px green;
+            text-align: center;
+        }
+
+        #topMenu li {
+            display: inline;
+        }
+
+        #menu {
+            width: 500px;
+            padding: 10px;
+            margin: 20px 0 0 40px;
+            background-color: lightgreen;
+            border: dashed 4px tomato;
+            text-align: center;
+        }
+
+        #menu li {
+            display: inline;
+        }
+
+        .contents {
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+            background-repeat: no-repeat;
+            background-size: 200px 200px;
+        }
+
+        #ai {
+            background-image: url("./Ai공학관.png");
+        }
+
+        #vision {
+            background-image: url("./비전타워.png");
+        }
+
+        #gachon {
+            background-image: url("./가천관.png");
+        }
+
+        .imgTitle {
+            color: black;
+            background-color: white;
+            padding: 8px;
+            text-align: center;
+            margin: 150px 10px 0 10px;
+        }
+
+        table,
+        tr,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            margin: 10px;
+            padding: 8px 16px 8px 16px;
+            text-align: center;
+        }
+
+        td.title{
+            background-color: lightgray;
+        }
+        td.header{
+            background-color: lightblue;
+        }
+
+    </style>
+</head>
+
+<body>
+    <ul id="topMenu">
+        <li><a href="./index.html">index</a></li>
+        <li><a href="./class1_book.html">book</a></li>
+        <li><a href="./class_display.html">display</a></li>
+    </ul>
+
+    <ul id="menu">
+        <li>학교소개 |</li>
+        <li>학과소개 |</li>
+        <li>공지사항 |</li>
+        <li>업무제휴 |</li>
+        <li>고객센터</li>
+    </ul>
+    <br>
+    <br>
+    <img src="./배너.png" alt="가천대학교" width="800px" height="500">
+    <h1>가천대학교 글로벌 캠퍼스</h1>
+    <h2>가천대 소개</h2>
+    <span>4차 산업혁명시대, 가천에서 꿈을 펼치세요
+        인재가 희망이고 자산입니다.
+        그들이 박애·봉사·애국의 정신으로 이웃과 세상을 위해 불을 환히 밝히면 나의 꿈은 완성될 것입니다.</span>
+    <h2>건물</h2>
+    <div id="ai" class="contents">
+        <h3 class="imgTitle">AI공학관</h3>
+    </div>
+    <div id="vision" class="contents">
+        <h3 class="imgTitle">비전타워</h3>
+    </div>
+    <div id="gachon" class="contents">
+        <h3 class="imgTitle">가천관</h3>
+    </div>
+    <h2>오시는길</h2>
+    <img src="./가천대길.png" alt="" width="800" height="400">
+    <h3>SRT 이용</h3>
+    <table>
+        <tr>
+            <td class="title">경부선</td>
+            <td>부산 ~ 수서</td>
+        </tr>
+        <tr>
+            <td class="title">호남선</td>
+            <td>목포 ~ 수서</td>
+        </tr>
+    </table>
+    <h3>EX-HUB 가천대역 환승정류장 노선버스</h3>
+    <table>
+        <tr>
+            <td class="header">운행 노선(시행일) </td>
+            <td class="header" colspan="2">정차 노선버스 현황</td>
+        </tr>
+        <tr>
+            <td class="title" rowspan="3">4개 노선(2015.12.28.)</td>
+        <tr>
+            <td>
+                1112번 (수원~동서울)
+            <td>8109번 (용인~일산)</td>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                8409번 (수원~의정부)
+            <td>1650번 (안양~구리)</td>
+            </td>
+        </tr>
+        </tr>
+        <tr>
+            <td class="title" rowspan="2">2개 노선 (2016.1.14.)</td>
+        <tr>
+            <td>1113번 (수원~동서울)</td>
+            <td>8108번 (용인~일산)</td>
+        </tr>
+        </tr>
+        <tr>
+            <td class="title" rowspan="3">3개 노선 (2016.11.15.)</td>
+        <tr>
+            <td>
+                1801번 (인천~동서울)
+            <td>8147번 (안산~동서울)</td>
+            </td>
+        </tr>
+        <tr>
+            <td>8142번 (부천~동서울)</td>
+        </tr>
+        </tr>
+    </table>
+    <h3>승용차 이용</h3>
+    <table>
+        <tr>
+            <td class="title">경부고속도로</td>
+            <td>경부고속도로→서울요금소(1Km)→서울외곽순환고속도로(구리방면,1Km)→ 성남ㆍ광주IC(서울방면,1.5Km)→가천대학교</td>
+        </tr>
+        <tr>
+            <td class="title">중부고속도로</td>
+            <td>중부고속도로→동서울요금소(외곽순환고속도로 진입)→ 송파IC(성남방면,1.5Km)→가천대학교</td>
+        </tr>
+    </table>
+    <h3>버스 이용</h3>
+    <table>
+        <tr>
+            <td class="title" rowspan="4">일반 버스</td>
+        <tr>
+            <td>5번 산성동-가천대-마천동</td>
+            <td>1116번 기흥-가락시장-잠실</td>
+            <td>116번 죽전-모란-잠실</td>
+            <td>30번 강일동-올림픽공원-성남</td>
+        </tr>
+        <tr>
+            <td>70번 성남-천호동-상봉동</td>
+            <td>119번 기흥-가락시장-잠실</td>
+            <td>30-1번 하남시-천호동-성남</td>
+            <td>100번 성남-가락시장-잠실</td>
+        </tr>
+        <tr>
+            <td>32번 광주-모란역-잠실</td>
+            <td>320번 복정동-송현초등-동천동</td>
+        </tr>
+        </tr>
+        <tr>
+            <td class="title">지선 버스</td>
+            <td>4419번 분당-모란-을지로</td>
+        </tr>
+        <tr>
+            <td class="title" rowspan="3">간선 버스</td>
+        <tr>
+            <td>303번 성남-잠실-신설동</td>
+            <td>302번 성남-구의동-동대문</td>
+            <td>407번 복정사거리-가천대-동대문</td>
+        </tr>
+        <tr>
+            <td>407번 복정사거리-가천대-동대문</td>
+            <td>462번 복정사거리-가천대-영등포역</td>
+        </tr>
+        </tr>
+        <tr>
+            <td class="title">광역 버스</td>
+            <td>9403 분당-모란-을지로</td>
+        </tr>
+        <tr>
+            <td class="title" rowspan="2">직행 버스</td>
+        <tr>
+            <td>500-1 잠실-곤지암-동원대</td>
+            <td>500-2 교대-광주-동원대</td>
+            <td>1117 강변역-성남-외대</td>
+        </tr>
+        </tr>
+    </table>
+    <h3>지하철 이용</h3>
+    <table>
+        <tr>
+            <td class="title">수인분당선</td>
+            <td>왕십리역 - 가천대역 - 망포역(가천대역에서 하차하여 비전타워 전용통로를 이용하면 캠퍼스 진입이 가능합니다.)</td>
+        </tr>
+        <tr>
+            <td class="title" rowspan="3">3호선</td>
+        <tr>
+            <td>
+                도곡역 - 수인분당선 환승 - 가천대역
+            </td>
+        <tr>
+            <td>수서역 - 수인분당선 환승 - 가천대역</td>
+        </tr>
+        </tr>
+        </tr>
+        <tr>
+            <td class="title" rowspan="3">2호선</td>
+        <tr>
+            <td>
+                잠실역 - 8호선환승 - 복정역 - 수인분당선 환승 - 가천대역
+            </td>
+        <tr>
+            <td>선릉역 - 수인분당선 환승 - 가천대역</td>
+        </tr>
+        </tr>
+        </tr>
+    </table>
+</body>
+
+</html>

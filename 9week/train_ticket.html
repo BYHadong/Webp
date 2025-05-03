@@ -58,50 +58,75 @@
             width: 100px;
             height: 40px;
         }
+
+
+
+        #topMenu {
+            width: 500px;
+            padding: 10px;
+            margin: 20px 0 0 40px;
+            background-color: white;
+            border: dashed 4px green;
+            text-align: center;
+        }
+
+        #topMenu li {
+            display: inline;
+        }
     </style>
 </head>
 
 <body>
+
+    <ul id="topMenu">
+        <li><a href="./index.html">캘린더</a></li>
+        <li><a href="./login.html">login</a></li>
+        <li><a href="./train_ticket.html">train</a></li>
+    </ul>
+    <br>
+    <br>
+    <br>
+    <br>
     <h2>KTX 열차표 예매</h2>
 
-<table>
-    <tr id="table_title">
-        <th>열차번호</th>
-        <th>출발</th>
-        <th>도착</th>
-        <th>출발시간</th>
-        <th>특실</th>
-        <th>일반실</th>
-        <th>소요시간</th>
-    </tr>
-    <tr>
-        <td id="col1" class="train">175</td>
-        <td id="col2">서울</td>
-        <td id="col3">부산</td>
-        <td id="col4">21:00</td>
-        <td id="col5"><img src="./img/full.png"></td>
-        <td id="col6"><img src="./img/full.png"></td>
-        <td id="col7">02:44</td>
-    </tr>
-    <tr>
-        <td class="train">177</td>
-        <td>서울</td>
-        <td>부산</td>
-        <td>21:30</td>
-        <td><img src="./img/empty.png"></td>
-        <td><img src="./img/empty.png"></td>
-        <td>02:38</td>
-    </tr>
-    <tr>
-        <td class="train">179</td>
-        <td>서울</td>
-        <td>부산</td>
-        <td>22:00</td>
-        <td><img src="./img/empty.png"></td>
-        <td><img src="./img/empty.png"></td>
-        <td>02:42</td>
-    </tr>
-</table>
+    <table>
+        <tr id="table_title">
+            <th>열차번호</th>
+            <th>출발</th>
+            <th>도착</th>
+            <th>출발시간</th>
+            <th>특실</th>
+            <th>일반실</th>
+            <th>소요시간</th>
+        </tr>
+        <tr>
+            <td id="col1" class="train">175</td>
+            <td id="col2">서울</td>
+            <td id="col3">부산</td>
+            <td id="col4">21:00</td>
+            <td id="col5"><img src="./img/full.png"></td>
+            <td id="col6"><img src="./img/full.png"></td>
+            <td id="col7">02:44</td>
+        </tr>
+        <tr>
+            <td class="train">177</td>
+            <td>서울</td>
+            <td>부산</td>
+            <td>21:30</td>
+            <td><img src="./img/empty.png"></td>
+            <td><img src="./img/empty.png"></td>
+            <td>02:38</td>
+        </tr>
+        <tr>
+            <td class="train">179</td>
+            <td>서울</td>
+            <td>부산</td>
+            <td>22:00</td>
+            <td><img src="./img/empty.png"></td>
+            <td><img src="./img/empty.png"></td>
+            <td>02:42</td>
+        </tr>
+    </table>
 </body>
 
 </html>
