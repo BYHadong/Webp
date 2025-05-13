@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <!-- /* 상단 메뉴바 */ -->
+    <link rel="stylesheet" href="./main_menu.css"/>
+    <style>
+        #parent {
+            position: relative;
+            width: 500px;
+            height: 300px;
+            border: solid 5px #000000;
+            margin: 50px 0 0 50px;
+        }
+
+        #box1,
+        #box2,
+        #box3 {
+            width: 80px;
+            height: 80px;
+        }
+
+        #box1 {
+            background-color: #ff0000;
+        }
+
+        #box2 {
+            top: 20px;
+            left: 20px;
+            background-color: #00ff00;
+            position: absolute;
+        }
+
+        #box3 {
+            background-color: #ffff00;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header">
+
+        <img id="logo" src="./img/가천대 로고.png">
+        <ul id="top_menu">
+            <li>로그인 |</li>
+            <li>회원가입 |</li>
+            <li>마이페이지 |</li>
+            <li>주문배송 조회 |</li>
+            <li>장바구니 |</li>
+            <li>이용안내 |</li>
+            <li>고객센터</li>
+        </ul>
+        <ul id="main_menu">
+            <li><a class="menu_page" href="./index.html">index</a></li>
+            <li><a class="menu_page" href="./class_2.html">list</a></li>
+            <li><a class="menu_page" href="./class_3.html">picture</a></li>
+            <li><a class="menu_page" href="./class_5.html">position</a></li>
+            <li>페이지</li>
+            <li>페이지</li>
+        </ul>
+    </div>
+    <div id="parent">
+        <div id="box1">A</div>
+        <div id="box2">B</div>
+        <div id="box3">C</div>
+    </div>
+</body>
+
+</html>

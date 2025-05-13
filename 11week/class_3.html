@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <!-- /* 상단 메뉴바 */ -->
+    <link rel="stylesheet" href="./main_menu.css" />
+    <style>
+        #left {
+            width: 150px;
+            height: 600px;
+            float: left;
+            background-color: #343333;
+            color: #e2e2e2;
+        }
+
+        #left h2 {
+            font-weight: normal;
+            padding: 20px 0 0 30px;
+        }
+
+        #left ul {
+            font-size: 14px;
+            padding: 10px 10px 5px 25px;
+        }
+
+        #left li {
+            padding: 3px;
+        }
+
+        #right {
+            width: 650px;
+            height: 600px;
+            float: left;
+            background-color: #252525;
+        }
+
+        #main_title {
+            width: 572px;
+            padding: 10px;
+            border: solid 5px #444444;
+            margin: 24px 0 0 24px;
+            font-size: 18px;
+            color: #ffffff;
+            font-weight: bold;
+        }
+
+        #main_img {
+            padding: 15px 0 0 24px;
+        }
+
+        #thumbnail {
+            padding: 30px 0 0 70px;
+        }
+
+        #thumbnail #move_left {
+            float: left;
+            margin: 20px 5px 0 40px;
+        }
+
+        #thumbnail #photos {
+            float: left;
+            margin: 3px 0 0 0;
+        }
+
+        #thumbnail #move_right {
+            float: left;
+            margin: 20px 0 20px;
+        }
+
+        #thumbnail #photos li {
+            display: inline;
+            margin-left: 10px;
+        }
+
+        #thumbnail #photos img {
+            border: solid 5px #3d3d3d;
+        }
+
+        #thumbnail #photos a:hover img {
+            border: solid 5px #ffffff;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header">
+        <img id="logo" src="./img/가천대 로고.png">
+        <ul id="top_menu">
+            <li>로그인 |</li>
+            <li>회원가입 |</li>
+            <li>마이페이지 |</li>
+            <li>주문배송 조회 |</li>
+            <li>장바구니 |</li>
+            <li>이용안내 |</li>
+            <li>고객센터</li>
+        </ul>
+        <ul id="main_menu">
+            <li><a class="menu_page" href="./index.html">index</a></li>
+            <li><a class="menu_page" href="./class_2.html">list</a></li>
+            <li><a class="menu_page" href="./class_3.html">picture</a></li>
+            <li><a class="menu_page" href="./class_5.html">position</a></li>
+            <li>페이지</li>
+            <li>페이지</li>
+        </ul>
+    </div>
+
+    <div id="left">
+        <h2>포토갤러리</h2>
+        <ul>
+            <li class="submenu">+ 풍경</li>
+            <li class="submenu">+ 일상</li>
+            <li class="submenu">+ 인물</li>
+            <li class="submenu">+ 가족</li>
+        </ul>
+    </div>
+    <div id="right">
+        <div id="main_title">
+            풍경 사진
+        </div>
+        <img id="main_img" src="img/동물_ (1).jpeg" width="600" height="377">
+        <div id="thumbnail">
+            <img id="move_left" src="img/arrow_back_ios_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.png">
+            <ul id="photos">
+                <li><a href="#"><img src="img/동물_ (2).jpeg" width="50" height="50"></a></li>
+                <li><a href="#"><img src="img/동물_ (3).jpeg" width="50" height="50"></a></li>
+                <li><a href="#"><img src="img/동물_ (4).jpeg" width="50" height="50"></a></li>
+                <li><a href="#"><img src="img/동물_ (5).jpeg" width="50" height="50"></a></li>
+                <li><a href="#"><img src="img/동물_ (6).jpeg" width="50" height="50"></a></li>
+            </ul>
+            <img id="move_right" src="img/arrow_forward_ios_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.png">
+        </div>
+    </div>
+
+    <br>
+</body>
+
+</html>
