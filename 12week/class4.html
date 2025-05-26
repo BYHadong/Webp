@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>class4</title>
+    <link rel="stylesheet" type="text/css" href="./header_menu.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #header_background {
+            height: 80px;
+            background-color: #cccccc;
+        }
+
+        /* Float를 사용하는 자식 요소들을 감싸는 부모 요소에 overflow: hidden;을 추가하여 float이 부모 요소의 높이에 영향을 미치도록 합니다. */
+        body>div {
+            /* header, aside, main, footer가 모두 <body>의 직계 자식이므로, div로 감싸거나 float을 clear하는 요소가 필요합니다. 여기서는 전체를 감싸는 div를 추가하는 것을 전제로 합니다. */
+            overflow: hidden;
+        }
+
+        aside {
+            width: 25%;
+            height: 300px;
+            float: left;
+            background-color: #ffff00;
+            /* '마fff00'은 유효한 색상 코드가 아니므로 '#ffff00'으로 수정했습니다. */
+        }
+
+        main {
+            width: 75%;
+            height: 300px;
+            float: left;
+            /* 'l ef t' 오타 수정 */
+            background-color: #00ff00;
+        }
+
+        footer {
+            height: 80px;
+            clear: both;
+            /* 'clear.b ot h' 오타 수정 */
+            background-color: #cccccc;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="page_menu">
+        <header>
+            <img id="logo" src="./img/marklogo-slogan.jpg" alt="로고" width="300" height="150">
+            <img id="moto" src="./img/moto.png" alt="모토" width="400" height="100">
+            <ul id="top_menu">
+                <li>로그인</li>
+                <li>회원 가입</li>
+                <li>사이트맵</li>
+                <li>회사 소개</li>
+            </ul>
+            <div class="clear"></div>
+            <div class="line"></div>
+            <nav>
+                <ul>
+                    <li><a href="./index.html"><img src="./img/menu1.png" alt="메뉴1" width="100" height="50"></a></li>
+                    <li class="item"><a href="./class1.html"><img src="./img/menu2.png" alt="메뉴2" width="100"
+                                height="50"></a></li>
+                    <li class="item"><a href="./class2.html"><img src="./img/menu3.png" alt="메뉴3" width="100"
+                                height="50"></a></li>
+                    <li class="item"><a href="./class3.html"><img src="./img/menu4.png" alt="메뉴4" width="100"
+                                height="50"></a></li>
+                    <li class="item"><a href="./class4.html"><img src="./img/menu5.png" alt="메뉴5" width="100" height="50"></a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <div class="clear"></div>
+    <div id="page_main">
+        <div>
+            <header id="header_background">
+                헤더 콘텐츠
+            </header>
+            <aside>
+                좌측 콘텐츠
+            </aside>
+            <main>
+                메인 콘텐츠
+            </main>
+            <footer>
+                푸터 콘텐츠
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>

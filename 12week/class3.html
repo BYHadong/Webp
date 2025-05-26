@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>class3</title>
+    <link rel="stylesheet" type="text/css" href="./header_menu.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #header_background {
+            width: 100%;
+            height: 80px;
+            background-color: #0000ff;
+        }
+
+        header #header_content {
+            width: 980px;
+            height: 50px;
+            margin: 0 auto;
+            background-color: #cccccc;
+            /* 원래 '1cccccc'이었는데 오타로 보여서 수정했습니다. */
+        }
+
+        #main_box {
+            width: 980px;
+            margin: 0 auto;
+            /* float를 사용하는 자식 요소가 있으므로, 부모 요소가 float을 포함하도록 overflow: hidden; 또는 clearfix를 추가할 수 있습니다. */
+            overflow: hidden;
+            /* 자식 요소의 float을 감싸기 위해 추가 */
+        }
+
+        #main_box aside {
+            /* 'box aside'는 잘못된 선택자입니다. #main_box 내의 aside를 의미하는 #main_box aside로 수정했습니다. */
+            width: 200px;
+            height: 300px;
+            float: left;
+            background-color: #ffff00;
+            /* 원래 "#'ffff00"이었는데 오타로 보여서 수정했습니다. */
+        }
+
+        #main_box main {
+            /* 'box main'은 잘못된 선택자입니다. #main_box 내의 main을 의미하는 #main_box main으로 수정했습니다. */
+            width: 780px;
+            height: 300px;
+            float: left;
+            background-color: #00ff00;
+        }
+
+        footer {
+            width: 100%;
+            height: 80px;
+            clear: both;
+            background-color: #0000ff;
+            /* 원래 '110000ff'이었는데 오타로 보여서 수정했습니다. */
+        }
+
+        footer #footer_content {
+            width: 980px;
+            height: 50px;
+            margin: 0 auto;
+            background-color: #cccccc;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="page_menu">
+        <header>
+            <img id="logo" src="./img/marklogo-slogan.jpg" alt="로고" width="300" height="150">
+            <img id="moto" src="./img/moto.png" alt="모토" width="400" height="100">
+            <ul id="top_menu">
+                <li>로그인</li>
+                <li>회원 가입</li>
+                <li>사이트맵</li>
+                <li>회사 소개</li>
+            </ul>
+            <div class="clear"></div>
+            <div class="line"></div>
+            <nav>
+                <ul>
+                    <li><a href="./index.html"><img src="./img/menu1.png" alt="메뉴1" width="100" height="50"></a></li>
+                    <li class="item"><a href="./class1.html"><img src="./img/menu2.png" alt="메뉴2" width="100"
+                                height="50"></a></li>
+                    <li class="item"><a href="./class2.html"><img src="./img/menu3.png" alt="메뉴3" width="100"
+                                height="50"></a></li>
+                    <li class="item"><a href="./class3.html"><img src="./img/menu4.png" alt="메뉴4" width="100"
+                                height="50"></a></li>
+                    <li class="item"><a href="./class4.html"><img src="./img/menu5.png" alt="메뉴5" width="100" height="50"></a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <div class="clear"></div>
+    <div id="page_main">
+        <header id="header_background">
+            <div id="header_content">
+                헤더 콘텐츠
+            </div>
+        </header>
+        <section id="main_box">
+            <aside>
+                좌측 콘텐츠
+            </aside>
+            <main>
+                메인 콘텐츠
+            </main>
+        </section>
+        <footer>
+            <div id="footer_content">
+                푸터 콘텐츠
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

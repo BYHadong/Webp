@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: '맑은 고딕', "돋움", sans-serif; /* '’ 맑은 고딕 ’’ , " 돋응" 오타 및 돋움체, 대체 폰트 추가 */
+    font-size: 12px;
+    color: #444444;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.clear {
+    clear: both;
+}

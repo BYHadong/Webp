@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>class2</title>
+    <link rel="stylesheet" type="text/css" href="./header_menu.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #wrap {
+            width: 980px;
+            margin: 0 auto;
+        }
+
+        #header_background {
+            height: 80px;
+            background-color: #cccccc;
+        }
+
+        aside#left {
+            width: 200px;
+            height: 300px;
+            float: left;
+            background-color: #ffff00;
+        }
+
+        aside#right {
+            width: 180px;
+            height: 300px;
+            float: left;
+            /* 원래 'le f t'로 되어 있었는데, 'left'로 수정했습니다. */
+            background-color: #00ffff;
+        }
+
+        main {
+            width: 600px;
+            height: 300px;
+            float: left;
+            background-color: #00ff00;
+            /* 원래 '1100ff00'이었는데 오타로 보여서 수정했습니다. */
+        }
+
+        footer {
+            height: 80px;
+            clear: both;
+            background-color: #cccccc;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="page_menu">
+        <header>
+            <img id="logo" src="./img/marklogo-slogan.jpg" alt="로고" width="300" height="150">
+            <img id="moto" src="./img/moto.png" alt="모토" width="400" height="100">
+            <ul id="top_menu">
+                <li>로그인</li>
+                <li>회원 가입</li>
+                <li>사이트맵</li>
+                <li>회사 소개</li>
+            </ul>
+            <div class="clear"></div>
+            <div class="line"></div>
+            <nav>
+                <ul>
+                    <li><a href="./index.html"><img src="./img/menu1.png" alt="메뉴1" width="100" height="50"></a></li>
+                    <li class="item"><a href="./class1.html"><img src="./img/menu2.png" alt="메뉴2" width="100"
+                                height="50"></a></li>
+                    <li class="item"><a href="./class2.html"><img src="./img/menu3.png" alt="메뉴3" width="100"
+                                height="50"></a></li>
+                    <li class="item"><a href="./class3.html"><img src="./img/menu4.png" alt="메뉴4" width="100"
+                                height="50"></a></li>
+                    <li class="item"><a href="./class4.html"><img src="./img/menu5.png" alt="메뉴5" width="100" height="50"></a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <div class="clear"></div>
+    <div id="page_main">
+        <div id="wrap">
+            <header id ="header_background">
+                헤더 콘텐츠
+            </header>
+            <aside id="left">
+                좌측 콘텐츠
+            </aside>
+            <main>
+                메인 콘텐츠
+            </main>
+            <aside id="right">
+                우측 콘텐츠
+            </aside>
+            <footer>
+                푸터 콘텐츠
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>
