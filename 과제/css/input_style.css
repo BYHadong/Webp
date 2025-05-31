@@ -1,0 +1,65 @@
+#input_border {
+    list-style: none;
+}
+
+#input_border li {
+    display: flex;
+    justify-content: left;
+    margin: 8px;
+}
+
+.input_content {
+    flex: 5;
+    font-size: 24px;
+    color: black;
+}
+
+.input_title {
+    flex: 1;
+    font-size: 24px;
+    color: black;
+}
+
+.footer .input_title {
+    display: block;
+}
+
+.input_btn {
+    width: 100px;
+    height: 60px;
+    background-color: lightgray;
+    font-size: 24px;
+    color: black;
+    font-weight: bold;
+    margin: 8px;
+}
+
+.input_btn:hover {
+    background-color: lightskyblue;
+    color: black;
+}
+
+.footer {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.input_content_box{
+    flex:1;
+    text-align: left;
+    margin: 8px;
+}
+
+@media screen and (max-width: 800px) {
+    .footer {
+        display: block;
+        text-align: center;
+    }
+
+
+    .input_content {
+        display: block;
+        width: 100%;
+    }
+}
